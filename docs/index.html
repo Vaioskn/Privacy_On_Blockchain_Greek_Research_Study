@@ -10,12 +10,17 @@
         body {
             font-family: Arial, sans-serif;
             background-color: #f5f5f5;
+            background-image: url('https://images.unsplash.com/photo-1566013646024-4a88da9255f8'); /* A sample background image related to blockchain */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
             padding: 50px;
             text-align: center;
+            color: #eaeaea; /* Light text color for better contrast with dark background */
         }
 
         h1 {
-            color: #333;
+            color: #fbc02d; /* A golden color, often associated with coins like Bitcoin */
         }
 
         p {
@@ -24,9 +29,11 @@
             padding: 20px;
             font-size: 18px;
             text-align: justify;
+            background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for the summary for better readability */
+            border-radius: 5px;
         }
 
-        a.download-button {
+        a.open-button {
             display: inline-block;
             margin-top: 20px;
             padding: 10px 30px;
@@ -37,7 +44,7 @@
             font-size: 18px;
         }
 
-        a.download-button:hover {
+        a.open-button:hover {
             background-color: #0056b3;
         }
     </style>
@@ -48,8 +55,8 @@
     <p>
         [Your study summary goes here...]
     </p>
-    <a href="Privacy_On_Blockchain.pdf" class="download-button">
-        <i class="fas fa-download"></i> Download Study
+    <a href="<pdf-file-name>.pdf" target="_blank" class="open-button">
+        <i class="fas fa-external-link-alt"></i> Open Study Paper
     </a>
 </body>
 
