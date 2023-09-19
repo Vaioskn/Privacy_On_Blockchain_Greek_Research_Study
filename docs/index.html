@@ -67,38 +67,29 @@
 
         /* ... your existing styles ... */
         
-        /* Common styles for all images */
-        .slide-image {
-            position: absolute;
-            transition: transform 0.3s ease-out;
-            height: 300px;  /* or whatever size you want */
-            width: auto;
-            z-index: 1;  /* Ensures images are below the sidebar */
-        }
-        
         /* Image 1 - Top Right */
         .slide-image-1 {
             top: 0;
-            right: -calc(100% - 50px);  /* hide all but 50 pixels of the image */
+            right: -15%;  /* hide 15% of the image */
         }
         .slide-image-1:hover {
-            transform: translateX(-85%);
+            transform: translateX(-15%);
         }
         
         /* Image 2 - Bottom Right */
         .slide-image-2 {
             bottom: 0;
-            right: -calc(100% - 50px);  /* hide all but 50 pixels of the image */
+            right: -15%;
         }
         .slide-image-2:hover {
-            transform: translateX(-85%);
+            transform: translateX(-15%);
         }
         
         /* Image 3 - Top Left */
         .slide-image-3 {
             top: 0;
             left: 32%;  /* adjusted based on the sidebar width */
-            transform: translateX(85%);
+            transform: translateX(-15%);
         }
         .slide-image-3:hover {
             transform: translateX(0);
@@ -108,7 +99,7 @@
         .slide-image-4 {
             bottom: 0;
             left: 32%;
-            transform: translateX(85%);
+            transform: translateX(-15%);
         }
         .slide-image-4:hover {
             transform: translateX(0);
