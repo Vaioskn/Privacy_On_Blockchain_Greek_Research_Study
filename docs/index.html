@@ -23,10 +23,10 @@
             position: absolute;
             top: 0;
             left: 0;
-            height: 100vh; /* Full height */
-            width: 35%; /* Width */
+            height: 100vh;
+            width: 35%;
             background-color: black;
-            color: white; /* Text color */
+            color: white;
             padding: 20px;
             box-sizing: border-box; /* Includes padding in the width calculation */
             display: flex;
@@ -37,43 +37,40 @@
         }
 
         .sidebar h1 {
-            margin: 0; /* Reset margin */
-            font-size: 10em; /* Increased font size */
-            line-height: 1.2; /* Adjust line height */
+            margin: 0;
+            font-size: 10em;
+            line-height: 1.2;
         }
 
         .sidebar p {
-            margin-top: 50px; /* Added space above the summary */
-            font-size: 0.95em; /* Slightly decreased font size */
-            line-height: 1.6; /* Increased line spacing */
+            margin-top: 50px;
+            font-size: 0.95em;
+            line-height: 1.6;
             padding: 10px 0;
-			border-top: 1px solid white;      /* Adds a thin white line above the summary */
-			padding-top: 20px;                /* Adds some space above the summary text */
-			padding-bottom: 20px;             /* Adds some space below the summary text */
+			border-top: 1px solid white;
+			padding-top: 20px;
+			padding-bottom: 20px;
         }
 
         .open-button {
             display: block;
             margin-top: 20px;
             padding: 10px;
-            background-color: transparent; /* No background */
-            border: 1px solid white; /* White border */
-            color: white; /* White text */
+            background-color: transparent;
+            border: 1px solid white;
+            color: white;
             text-decoration: none;
             text-align: center;
             border-radius: 5px;
         }
 
         .open-button:hover {
-            background-color: rgba(255, 255, 255, 0.1); /* Slight white background on hover */
+            background-color: rgba(255, 255, 255, 0.1);
         }
-
-        /* ... your existing styles ... */
-        
 		.slide-image {
 			position: absolute;
 			transition: transform 0.3s ease-out;
-			height: 500px;  /* or whatever size you want */
+			height: 500px;
 			width: auto;
 			z-index: 1;  /* Ensures images are below the sidebar */
 		}
@@ -81,7 +78,7 @@
         /* Image 1 - Top Left */
         .slide-image-1 {
             top: 10%;
-            left: 1%;  /* adjust as needed based on the sidebar width */
+            left: 2%;
             transform: translateX(0%);
         }
         .slide-image-1:hover {
@@ -90,7 +87,7 @@
         /* Image 2 - Bottom Right */
         .slide-image-2 {
             bottom: 10%;
-            right: -33%;
+            right: -32%;
 			transform: translateX(0%);
         }
         .slide-image-2:hover {
@@ -99,11 +96,11 @@
 		
 		.top-right-image {
 			position: absolute;
-			top: 10px;   /* Adjust as needed */
-			right: 10px; /* Adjust as needed */
-			height: 170px; /* Or whatever size you want */
+			top: 10px;
+			right: 10px;
+			height: 170px;
 			width: auto;
-			z-index: 3;  /* This ensures the image is on top of the sidebar */
+			z-index: 3; 
 		}
     </style>
 </head>
@@ -121,11 +118,9 @@
         </a>
 		<img src="https://github.com/Vaioskn/Privacy_On_Blockchain_Greek_Research_Study/blob/main/docs/files/Check_this.png?raw=true" class="top-right-image">
     </div>
-        <!-- ... your existing content ... -->
-
     <!-- The images -->
-    <img src="https://github.com/Vaioskn/Privacy_On_Blockchain_Greek_Research_Study/blob/main/docs/files/image_1.png?raw=true" class="slide-image slide-image-1">
-    <img src="https://github.com/Vaioskn/Privacy_On_Blockchain_Greek_Research_Study/blob/main/docs/files/image_2.png?raw=true" class="slide-image slide-image-2">
+    <img src="https://github.com/Vaioskn/Privacy_On_Blockchain_Greek_Research_Study/blob/main/docs/files/image_1_final.png?raw=true" class="slide-image slide-image-1">
+    <img src="https://github.com/Vaioskn/Privacy_On_Blockchain_Greek_Research_Study/blob/main/docs/files/image_2_final.png?raw=true" class="slide-image slide-image-2">
 </body>
 
 </html>
