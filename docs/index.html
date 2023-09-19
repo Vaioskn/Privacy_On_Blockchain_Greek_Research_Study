@@ -8,56 +8,61 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
+            margin: 0;
+            padding: 0;
             font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-            background-image: url('https://images.unsplash.com/photo-1566013646024-4a88da9255f8'); /* A sample background image related to blockchain */
+            background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/fs/694e52172856821.648732355332f.gif');
             background-size: cover;
             background-position: center;
-            background-attachment: fixed;
-            padding: 50px;
-            text-align: center;
-            color: #eaeaea; /* Light text color for better contrast with dark background */
+            background-repeat: no-repeat;
+            overflow: hidden; /* Prevents scrolling */
         }
 
-        h1 {
-            color: #fbc02d; /* A golden color, often associated with coins like Bitcoin */
-        }
-
-        p {
-            max-width: 800px;
-            margin: 0 auto;
+        .sidebar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100vh; /* Full height */
+            width: 25%; /* Width */
+            background-color: black;
+            color: white; /* Text color */
             padding: 20px;
-            font-size: 18px;
-            text-align: justify;
-            background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for the summary for better readability */
-            border-radius: 5px;
+            box-sizing: border-box; /* Includes padding in the width calculation */
         }
 
-        a.open-button {
-            display: inline-block;
+        .sidebar h1, .sidebar p {
+            margin: 0;
+            padding: 10px 0;
+        }
+
+        .open-button {
+            display: block;
             margin-top: 20px;
-            padding: 10px 30px;
-            background-color: #007BFF;
-            color: white;
+            padding: 10px;
+            background-color: transparent; /* No background */
+            border: 1px solid white; /* White border */
+            color: white; /* White text */
             text-decoration: none;
+            text-align: center;
             border-radius: 5px;
-            font-size: 18px;
         }
 
-        a.open-button:hover {
-            background-color: #0056b3;
+        .open-button:hover {
+            background-color: rgba(255, 255, 255, 0.1); /* Slight white background on hover */
         }
     </style>
 </head>
 
 <body>
-    <h1>Privacy On Blockchain Greek Research Study</h1>
-    <p>
-        The paper is an in-depth exploration of the intersection between blockchain technology and privacy. It begins with an overview of blockchain technology, emphasizing its reliance on Distributed Ledger Technology (DLT) and Peer-to-Peer (P2P) networks. These fundamental technologies provide the transparency and security that make blockchain a revolutionary tool in various fields. However, they also raise important privacy concerns, which the paper examines in detail. The paper explores the use of private and public keys, a critical aspect of user identity and transaction security. It then delves into cryptographic methods used to improve privacy in blockchain systems, including the use of zero-knowledge proofs, ring signatures, and Stealth addresses. These techniques provide ways to verify transactions and protect user identities without revealing unnecessary information, thus enhancing privacy. The concept of mixing is also discussed, a method used to obscure the traceability of transactions. The paper then provides a comprehensive comparison of different blockchain privacy systems, highlighting their unique features, strengths, and weaknesses. It further categorizes blockchain systems into Public, Private, Hybrid and Consortium. Each of these systems offers different levels of privacy, transparency and control, making them suitable for different applications and industries. The "Analysis-Synthesis" section of the paper provides an analysis of the problems surrounding blockchain, as well as solutions to these problems, through the techniques and approaches already presented up to this point. Finally, the paper concludes with "Conclusions", summarizing the key findings and implications of the research. It highlights the importance of blockchain privacy and the need for continued research and development. Essentially, the paper provides a comprehensive exploration of privacy in blockchain, presenting a balanced view of the opportunities and challenges presented by this innovative technology. It is written in Greek in its entirety.
-    </p>
-    <a href="Privacy_On_Blockchain.pdf" target="_blank" class="open-button">
-        <i class="fas fa-external-link-alt"></i> Open Study Paper
-    </a>
+    <div class="sidebar">
+        <h1>Privacy On Blockchain Greek Research Study</h1>
+        <p>
+            [Your study summary goes here...]
+        </p>
+        <a href="https://vaioskn.github.io/Privacy_On_Blockchain_Greek_Research_Study/Privacy_On_Blockchain.pdf" target="_blank" class="open-button">
+            Open Study Paper
+        </a>
+    </div>
 </body>
 
 </html>
