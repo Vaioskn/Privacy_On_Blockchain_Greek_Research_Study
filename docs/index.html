@@ -67,42 +67,31 @@
 
         /* ... your existing styles ... */
         
-        /* Image 1 - Top Right */
+		.slide-image {
+			position: absolute;
+			transition: transform 0.3s ease-out;
+			height: 500px;  /* or whatever size you want */
+			width: auto;
+			z-index: 1;  /* Ensures images are below the sidebar */
+		}
+        
+        /* Image 1 - Top Left */
         .slide-image-1 {
-            top: 0;
-            right: -15%;  /* hide 15% of the image */
+            top: 10%;
+            left: 1%;  /* adjust as needed based on the sidebar width */
+            transform: translateX(0%);
         }
         .slide-image-1:hover {
-            transform: translateX(-15%);
+            transform: translateX(82%);
         }
-        
         /* Image 2 - Bottom Right */
         .slide-image-2 {
-            bottom: 0;
-            right: -15%;
+            bottom: 10%;
+            right: -33%;
+			transform: translateX(0%);
         }
         .slide-image-2:hover {
-            transform: translateX(-15%);
-        }
-        
-        /* Image 3 - Top Left */
-        .slide-image-3 {
-            top: 10;
-            left: 0;  /* adjusted based on the sidebar width */
-            transform: translateX(+15%);
-        }
-        .slide-image-3:hover {
-            transform: translateX(0);
-        }
-        
-        /* Image 4 - Bottom Left */
-        .slide-image-4 {
-            bottom: 10;
-            left: 0;
-            transform: translateX(+15%);
-        }
-        .slide-image-4:hover {
-            transform: translateX(0);
+            transform: translateX(-82%);
         }
     </style>
 </head>
@@ -122,10 +111,8 @@
         <!-- ... your existing content ... -->
 
     <!-- The images -->
-    <img src="https://github.com/Vaioskn/Privacy_On_Blockchain_Greek_Research_Study/blob/main/docs/files/card_1-round.png?raw=true" class="slide-image slide-image-1">
-    <img src="https://github.com/Vaioskn/Privacy_On_Blockchain_Greek_Research_Study/blob/main/docs/files/card_2-round.png?raw=true" class="slide-image slide-image-2">
-    <img src="https://github.com/Vaioskn/Privacy_On_Blockchain_Greek_Research_Study/blob/main/docs/files/card_3-round.png?raw=true" class="slide-image slide-image-3">
-    <img src="https://github.com/Vaioskn/Privacy_On_Blockchain_Greek_Research_Study/blob/main/docs/files/card_4-round.png?raw=true" class="slide-image slide-image-4">
+    <img src="https://github.com/Vaioskn/Privacy_On_Blockchain_Greek_Research_Study/blob/main/docs/files/image_1.png?raw=true" class="slide-image slide-image-1">
+    <img src="https://github.com/Vaioskn/Privacy_On_Blockchain_Greek_Research_Study/blob/main/docs/files/image_2.png?raw=true" class="slide-image slide-image-2">
 </body>
 
 </html>
